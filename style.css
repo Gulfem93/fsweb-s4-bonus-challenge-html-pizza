@@ -1,97 +1,276 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
+body{
   margin: 0;
+  padding: 0;
+}
+
+header{
+  background-image: url('public/assets/iteration-1/home-banner.png');
+  width: 100%; 
+  height: 100vh;
+  color: white;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  align-items: center;
+  flex-direction: column;
+  background-size: cover;
+  background-repeat: no-repeat;
+  gap: 100px;
   text-align: center;
+  font-size: 25px;
+  padding-top: 30px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #f7df1eaa);
+.img-logo{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 10px;
 }
 
-.card {
-  padding: 2em;
+.txt-firsat{
+  font-family: 'Satisfy';
+  color: #FDC913;
+  margin-bottom: 0px;
 }
 
-.read-the-docs {
-  color: #888;
+.txt-pizza{
+  font-size: 4rem;
+  margin-top: 0px;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.btn-aciktim{
+  display: flex;
+  font-family: "Barlow", cursive;
+  justify-content: center;        
+  align-items: center;
+  margin: 0;
+  background-color: #FDC913;
+  border: #FDC913;
+  border-radius: 25px;
+  margin: 0 auto;
+  padding: 20px 40px;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.icons{
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 45px;
+}
+.burger-section{
+  background-color: #FAF7F2;
+  margin-bottom: 100px;
+}
+
+.ozel-lezzetus{
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin: 0 auto;
+}
+
+.p-ozel-lezzetus{
+  display: flex;
+  padding-left: 0px;
+  font-size: 3rem;
+  color: white;
+}
+.p-ozel-lezzetus-position{
+  display: flex;
+  font-size: 16px;
+  color: white;
+
+}
+section h2{
+  text-align: center;
+  font-family: "Satisfy";
+  color: #CE2829;
+}
+section h3{
+  text-align: center;
+  font-size: 30px;
+}
+.btn-siparis{
+  display: flex;
+  border-radius: 25px;
+  width: 150px;
+  height: 50px;
+  color: #CE2829;
+  border: white;
+  align-items: center;
+}
+
+.icon-section{
+  display: flex;
+}
+.li-icons {
+  display: flex; 
+  align-items: center; 
+}
+.lezzetus{
+  height: 20rem;
+  width: 30%;
+  background-color: aqua;
+  padding: 20px;
+  background-image: url('public/assets/iteration-2/cta/kart-1.png');
+  background-size: cover;
+  border-radius: 25px;
+}
+
+.burger{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  
+}
+
+.burger-menu{
+  background-image: url('public/assets/iteration-2/cta/kart-2.png');
+  background-size: cover;
+  border-radius: 25px;
+  color: white;
+  
+  height: 11rem;
+  width: 30%;
+  padding-right: 275px;
+  
+}
+.burger-kurye{
+  background-image: url('public/assets/iteration-2/cta/kart-3.png');
+  background-size: cover;
+  border-radius: 25px;
+  height: 11rem;
+  width: 30%;
+  
+  padding-right: 275px;
+}
+.btn-burger-kurye{
+  display: flex;
+  border-radius: 25px;
+  width: 150px;
+  height: 50px;
+  color: #CE2829;
+  border: white;
+  align-items: center;
+  
+}
+.h-paketlenen-menuler{
+  font-weight: 100;
+}
+.icons2{
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 45px;
+}
+.btn-icon{
+  background-color: white;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  border: white;
+}
+.btn-icon:hover{
+  background-color:  #292929;
+  color: white;
+}
+.section-img{
+  width: 150px;
+  height: 150px;
+}
+.section-pizza{
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+  gap: 50px;
+}
+.pizza{
+  height: 150px;
+  width: 150px;
+  background-color: white;
+}
+.aci-pizza{
+  height: 200px;
+  width: 200px;
+  background-color: white;
+}
+.tavuklu-burger{
+  height: 200px;
+  width: 200px;
+  background-color: white;
+}
+
+.derecelendirme{
+  display: flex;
+  justify-content: space-around;
+}
+
+footer {
+  font-family: Arial, sans-serif;
+  background-color:  #292929;
+  color: white;
+  padding-top: 50px;
+  gap: 10px;
+
+}
+.footer-iletisim{
+  display: flex;
+  gap: 50px;
+  padding-top: 10px;
+}
+.iletisim {
+  display: flex;
+  flex-direction: column;  /* Her bir iletişim öğesini dikeyde sıralar */
+  gap: 25px;
+}
+
+.iletisim-item {
+  display: flex;  /* Yatayda hizalamayı sağlar */
+  align-items: center;  /* İkon ve metni ortalar */
+  margin-bottom: 10px;  /* Her iletişim öğesi arasında boşluk bırakır */
+  padding-left: 50px;
+}
+.baslik h1{
+  font-size: 14px;
+  display: flex;
+  padding-top: 50px;
+  padding-left: 75px;
+
+}
+.baslik .h-instagram{
+  padding-left: 250px;
+}
+.footer-logo{
+  height: 75px;
+  width: 250px;
+}
+
+.baslik{
+  display: flex;
+  padding-bottom: 25px;
+  padding-left: 50px;
+}
+
+.iletisim-item img {
+  margin-right: 25px;  /* İkon ile metin arasına boşluk ekler */
+}
+
+.iletisim-item p {
+  margin: 0;  /* Paragrafın varsayılan margin'ini sıfırlar */
+}
+
+.hot-menu{
+  padding: 0px;
+}
+
+.img-instagram{
+  width: 50%;
 }

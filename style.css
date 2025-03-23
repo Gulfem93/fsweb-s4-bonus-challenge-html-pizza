@@ -223,8 +223,8 @@ section h3{
   gap: 50px;
 }
 .pizza{
-  height: 150px;
-  width: 150px;
+  height: 200px;
+  width: 200px;
   background-color: white;
 }
 .aci-pizza{
@@ -264,20 +264,11 @@ footer {
 
 .iletisim-item {
   display: flex;  /* Yatayda hizalamayı sağlar */
-  align-items: center;  /* İkon ve metni ortalar */
+    /* İkon ve metni ortalar */
   margin-bottom: 10px;  /* Her iletişim öğesi arasında boşluk bırakır */
   padding-left: 50px;
 }
-.baslik h1{
-  font-size: 14px;
-  display: flex;
-  padding-top: 50px;
-  padding-left: 75px;
 
-}
-.baslik .h-instagram{
-  padding-left: 250px;
-}
 .footer-logo{
   height: 75px;
   width: 250px;
@@ -310,13 +301,137 @@ footer {
     background-image: url("public/assets/iteration-1/home-banner.png");
     background-size: cover;
     background-position: center bottom;
-    font-size: 15px;
   }
   .txt-firsat{
     display: none;
   }
+  .img-logo{
+    padding-top: 15px;
+    width: 50%;
+  }
+  .txt-pizza{
+    font-size: 2.93rem;
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0 auto;
+  }
   .btn-aciktim{
     padding-top: 0px;
   }
+
+  .icons {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    gap: 10px; /* Space between items */
+  }
+
+  .li-icons {
+    width: calc(50% - 10px); /* Two items per row with a small gap */
+    list-style: none;
+    display: flex;
+    align-items: center; /* Align image and text vertically */
+    text-align: left; /* Align text to the left */
+  }
+
+  .li-icons img {
+    max-width: 40px; /* Adjust image size */
+    height: auto;
+    margin-right: 10px; /* Space between image and text */
+  }
+
+  p{
+    margin: 0; /* Remove default margin around p */
+  }
+  .ozel-lezzetus{
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .lezzetus{
+    width: 90%;
+    height: 45%;
+    background-size: cover;
+  }
   
+  .burger-menu{
+    background-size: cover;
+    border-radius: 25px;
+    height: 11rem;
+    width: 20%;
+    padding-right: 275px;
+    color: white;
+  } 
+  .p-ozel-lezzetus {
+    display: flex;
+    padding-bottom: 2px;
+    font-size: 1.75rem;
+    color: white; 
+  }
+  .burger-menu p{
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 2px;
+    font-size: 1.25rem;
+    color: white; 
+  }
+
+
+  .icons2 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    gap: 10px; /* Space between items */
+  }
+
+  .btn-icon {
+    width: calc(50% - 10px); /* Two items per row with a small gap */
+    list-style: none;
+    display: flex;
+    align-items: center; /* Align image and text vertically */
+    text-align: left; /* Align text to the left */
+  }
+
+  .btn-icon img {
+    max-width: 40px; /* Adjust image size */
+    height: auto;
+    margin-right: 10px; /* Space between image and text */
+  }
+
+  p{
+    margin: 0; /* Remove default margin around p */
+  }
+  .btn-icon:hover{
+    background-color:  #292929;
+    color: white;
+  }
+
+  .section-pizza{
+    display: flex;
+    flex-direction: column;
+    padding-left: 75px;
+  }
+  .pizza, .aci-pizza, .tavuklu-burger{
+    width: 300px;
+    height: 300px;
+  }
+  .section-img{
+    padding-left: 75px;
+  }
+
+  .footer-iletisim{
+    background-color: #292929;
+    display: flex;
+    flex-direction: column;
+  }
+  .hot-menu, .instagram{
+    padding-left: 50px;
+  }
+  .img-instagram{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create 3 equal-width columns */
+    gap: 10px; /* Add space between the images */
+  }
 }

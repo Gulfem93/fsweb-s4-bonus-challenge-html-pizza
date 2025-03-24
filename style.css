@@ -296,7 +296,7 @@ footer {
   width: 50%;
 }
 
-@media (max-width: 590px) {
+@media (max-width: 600px) {
   header{
     background-image: url("public/assets/iteration-1/home-banner.png");
     background-size: cover;
